@@ -8,18 +8,18 @@ Configured the **AWS IAM Identity Center** Enterprise Application within Microso
 
 ### 2. SAML Attribute & Claims Mapping
 Mapped the `Unique User Identifier (Name ID)` claim to `user.mail` to bypass external guest account UPN character restrictions (`#EXT#`).
-![Entra ID Claims Mapping](./images/2-entra-saml-claims-mapping.png)
+![Entra ID Claims Mapping](./2-entra-saml-claims-mapping.png)
 
 ---
 
 ### 3. AAWS Identity Source Configuration
 Switched the IAAM Identity Center Identity Source to **External identity provider** and imported the Entra ID SAML metadata.
 
-![AWS Identity Source](./images/3-aws-identity-source-config.png)
+![AWS Identity Source](./3-aws-identity-source-config.png)
 
 ---
 
 ### 4. Account Assignment & Access Portal
 Assigned the federated user identity to the target AWS account with the `Administratoraccess` permission set.
 
-![AWS Account Assignment](./images/4-aws-portal-account-assignment.png)
+![AWS Account Assignment](./4-aws-portal-account-assignment.png)
