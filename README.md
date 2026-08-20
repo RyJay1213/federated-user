@@ -12,8 +12,8 @@ Mapped the `Unique User Identifier (Name ID)` claim to `user.mail` to bypass ext
 
 ---
 
-### 3. AAWS Identity Source Configuration
-Switched the IAAM Identity Center Identity Source to **External identity provider** and imported the Entra ID SAML metadata.
+### 3. AWS Identity Source Configuration
+Switched the IAM Identity Center Identity Source to **External identity provider** and imported the Entra ID SAML metadata.
 
 ![AWS Identity Source](./3-aws-identity-source-config.png)
 
